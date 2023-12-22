@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script type="module" src="build/Pigs.js"></script>
+    <script type="module" src="build/PigsController.js"></script>
+    <script type="module" src="build/main.js"></script>
+</head>
+<body>
+    <h2>Farmer Hoggott's Inventory</h2>
+
+    <main id="main_contaner">
+        <table id="main_table">
+            <thead>
+                <th>Name</th>
+                <th>Category</th>
+                <th></th>
+                <th></th>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <button id="add_button">Add</button>
+
+        <container id="dynamic_tables">
+            <container id="add_new_flex">
+                <p>Add New:</p>
+                <table id="add_new_table">
+                    <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td><input id="new_name" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Breed</td>
+                            <td><input id="new_breed" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Height</td>
+                            <td><input id="new_height" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td><input id="new_weight" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Personality (Distinct)</td>
+                            <td><input id="new_personality" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Category</td>
+                            <td><select id="new_category">
+                                <option value="" disabled selected>Select Your Option</option>
+                                <option value="Grey">Grey</option>
+                                <option value="Chestnut">Chestnut</option>
+                                <option value="White">White</option>
+                                <option value="Black">Black</option>
+                            </select></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </container>
+
+            <container id="more_info_flex">
+                <p>More Information: </p>
+                <table id="more_info_table">
+                    <tbody><tr></tr></tbody>
+                </table>
+            </container>
+        </container>
+    </main>
+</body>
+</html>

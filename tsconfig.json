@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "ES6",
+    "target": "ES5",
+    "sourceMap": false,
+    "outDir": "src/build"
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src/scripts/**/*"
+  ]
+}
