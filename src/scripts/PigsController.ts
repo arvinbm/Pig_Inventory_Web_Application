@@ -19,7 +19,7 @@ export class PigsController implements PigsServices {
     }
 
     getAll() {
-        return JSON.parse(localStorage.userArray);
+        return JSON.parse(localStorage.userArray || '[]');
     }
 
     delete(name: string) {

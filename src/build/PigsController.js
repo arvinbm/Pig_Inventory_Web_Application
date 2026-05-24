@@ -7,7 +7,7 @@ var PigsController = /** @class */ (function () {
         localStorage.userArray = JSON.stringify(this.pigs);
     };
     PigsController.prototype.getAll = function () {
-        return JSON.parse(localStorage.userArray);
+        return JSON.parse(localStorage.userArray || '[]');
     };
     PigsController.prototype.delete = function (name) {
         this.pigs = this.pigs.filter(function (pig) {
